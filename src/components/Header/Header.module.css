@@ -9,9 +9,10 @@
     background-color: #39445a;
     padding: 10px;
     color: white;
-    font-family: Montserrat, sans-serif;
+    font-family: Comfortaa, sans-serif;
     z-index: 100;
     box-shadow: 0px 1px 5px black;
+    cursor: pointer;
 }
 
 @media (max-width:1000px) {

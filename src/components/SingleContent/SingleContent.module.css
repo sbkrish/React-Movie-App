@@ -1,0 +1,40 @@
+.SingleContent {
+    display: flex;
+    flex-direction: column;
+    width: 200px;    
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 600;
+    background-color: hsl(280, 7%, 18%);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.SingleContent:hover {
+    background-color: #ccc;
+    color: black;
+}
+
+.poster {
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    padding: 20px 0px;
+    height: 40px;
+}
+
+.date {
+    display: flex;
+    font-weight: 200;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 0px 10px 5px;
+}
+
+
