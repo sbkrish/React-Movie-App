@@ -16,3 +16,15 @@
   }
 }
 
+@media (max-width: 1500px) {
+  .App {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding-top: 60px;
+  }
+}
+

@@ -10,7 +10,7 @@ const theme = createTheme({
 });
 
 
-const CustomPagination = ({setPage}) => {
+const CustomPagination = ({setPage, numOfPages = 10}) => {
   const handlePageChange = (num) => {
     setPage(num);
     window.scroll(0,0);
@@ -20,7 +20,7 @@ const CustomPagination = ({setPage}) => {
   <div className={styles.CustomPagination}>
     <ThemeProvider theme={theme}>
       <Pagination 
-      count={10} 
+      count={numOfPages} 
       hideNextButton
       hidePrevButton
       onChange={(e) => handlePageChange(e.target.textContent)}

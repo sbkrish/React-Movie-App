@@ -1,1 +1,14 @@
-.Movies {}
+.Movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 10px;
+}

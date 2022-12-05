@@ -6,7 +6,8 @@ import SingleContent from '../../components/SingleContent/SingleContent';
 import CustomPagination from '../../components/CustomPagination/CustomPagination'
 const Trending = () => {
   const [content, setContent] = useState([]);
-  const [page, setPage] = useState(1)
+  const [page, setPage] = useState(1);
+
 
   useEffect(() => {
     const fetchTrending = async () => {
@@ -36,7 +37,7 @@ const Trending = () => {
           poster={poster_path}
           date={release_date || first_air_date}
           language={original_language}
-          rating={Math.round(vote_average)}
+          rating={(Math.round(vote_average * 100) / 100).toFixed(2)}
           overview={overview}
           />
         })
